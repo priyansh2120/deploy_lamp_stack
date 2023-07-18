@@ -1,35 +1,11 @@
-# LAMP Stack Configuration Script
+```markdown
+# Stack Configuration Scripts
 
-This script is used to configure a LAMP (Linux, Apache, MySQL, PHP) stack on a single node. It deploys a simple ecommerce application built using PHP and MySQL.
+This repository contains scripts for configuring two different stacks: LAMP (Linux, Apache, MySQL, PHP) and MERN (MongoDB, Express.js, React, Node.js). These scripts automate the deployment process for each stack and provide a foundation for building web applications.
 
-## Prerequisites
+## LAMP Stack Configuration Script
 
-- This script assumes a Linux operating system.
-- Make sure you have administrative privileges to install packages and configure services.
-
-## Usage
-
-1. Clone the repository to your local machine:
-
-   ```bash
-   git clone https://github.com/example/repository.git
-   ```
-
-2. Navigate to the cloned repository:
-
-   ```bash
-   cd repository
-   ```
-
-3. Run the script:
-
-   ```bash
-   bash lamp-stack-config.sh
-   ```
-
-## Configuration Steps
-
-The script performs the following configuration steps:
+The LAMP stack configuration script (`lamp-stack-config.sh`) is used to deploy a simple ecommerce application built using PHP and MySQL. It performs the following steps:
 
 1. Installs and configures firewalld.
 2. Installs and configures the MySQL database.
@@ -43,19 +19,73 @@ The script performs the following configuration steps:
 10. Installs Git.
 11. Downloads the ecommerce application code from Git.
 12. Replaces the database IP address with localhost in the index.php file.
-13. Checks if the web server is running and if the required items are present in the webpage.
+13. Checks if the web server is running and if the required items are present on the webpage.
 
-## Customization
+### Usage
 
-You can customize the script by modifying the following sections:
+To use the LAMP stack configuration script:
 
-- To change the Git repository URL, modify the `git clone` command in the script.
-- To change the IP address of the database server, modify the IP address in the `sed` command that replaces the IP address in the index.php file.
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/example/repository.git
+   ```
+
+2. Navigate to the cloned repository:
+
+   ```bash
+   cd repository
+   ```
+
+3. Run the LAMP stack configuration script:
+
+   ```bash
+   bash lamp-stack-config.sh
+   ```
+
+## MERN Stack Configuration Script
+
+The MERN stack configuration script (`mern-stack-config.sh`) is used to deploy a sample application built using MongoDB, Express.js, React, and Node.js. It performs the following steps:
+
+1. Installs and configures MongoDB.
+2. Configures firewall rules for MongoDB.
+3. Installs Node.js and npm.
+4. Clones the MERN stack application code from the specified Git repository.
+5. Installs project dependencies for both the client (React frontend) and the server (Express.js backend).
+6. Builds the React frontend and moves the build folder to the server directory.
+7. Starts the Node.js server.
+8. Installs and configures Nginx as a reverse proxy.
+9. Configures Nginx to serve the React app and proxy requests to the backend API.
+
+### Usage
+
+To use the MERN stack configuration script:
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/example/repository.git
+   ```
+
+2. Navigate to the cloned repository:
+
+   ```bash
+   cd repository
+   ```
+
+3. Run the MERN stack configuration script:
+
+   ```bash
+   bash mern-stack-config.sh
+   ```
 
 ## License
 
-This script is open-source and distributed under the [MIT License](https://opensource.org/licenses/MIT). Feel free to modify and use it according to your needs.
+These scripts are open-source and distributed under the [MIT License](https://opensource.org/licenses/MIT). Feel free to modify and use them according to your needs.
 
 ## Disclaimer
 
-This script is provided as-is without any warranty. Use it at your own risk.
+These scripts are provided as-is without any warranty. Use them at your own risk.
+```
+
+Please make sure to update the README file with the actual repository URL and script names before using it.
