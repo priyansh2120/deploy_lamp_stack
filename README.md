@@ -1,4 +1,4 @@
-```
+
 # Stack Configuration Scripts
 
 This repository contains scripts for configuring two different stacks: LAMP (Linux, Apache, MySQL, PHP) and MERN (MongoDB, Express.js, React, Node.js). These scripts automate the deployment process for each stack and provide a foundation for building web applications.
